@@ -8,7 +8,7 @@ const app = express();
 /* At the top, with other redirect methods before other routes redirects http to https */
 app.get('*',function(req,res,next){
   if(req.headers['x-forwarded-proto']!='https')
-    res.redirect('https://thomburt.com'+req.url)
+    res.redirect('https://www.thomburt.com'+req.url)
   else
     next() /* Continue to other routes if we're not redirecting */
 })
