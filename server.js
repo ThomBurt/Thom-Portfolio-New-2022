@@ -5,7 +5,14 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
+
+
+// ***************************************************************************************************************************//
+
 /* At the top, with other redirect methods before other routes redirects http to https */
+
+// COMMENT OUT FOR DEVELOPMENT
+
 app.get('*',function(req,res,next){
   if(req.headers['x-forwarded-proto']!='https')
     res.redirect('https://www.thomburt.com'+req.url)
@@ -13,6 +20,10 @@ app.get('*',function(req,res,next){
     next() /* Continue to other routes if we're not redirecting */
 })
 
+
+
+
+// ***************************************************************************************************************************//
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html'));
