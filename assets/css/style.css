@@ -993,7 +993,8 @@ section .container {
   position: fixed; /* Positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. */
   top: 0;
   left: 0;
-  background-color: #242f3f;
+  /* background-color: #242f3f; */
+  background: url('../img/thom_portfolio_bg.png');
   display: flex;
   justify-content: center;
   align-items: center;
