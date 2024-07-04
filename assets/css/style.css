@@ -995,9 +995,9 @@ section .container {
   top: 0;
   left: 0;
   /* background-color: #242f3f; */
-  background-color: #000000;
+  /* background-color: #000000; */
   /* background-image: linear-gradient(to right, #242f3f, #475569); */
-  /* background: url('../img/thom_portfolio_bg.png'); */
+  background: url('../img/bg.png');
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1040,7 +1040,7 @@ section .container {
 .loader {
   display: inline-block;
   width: 375px; /* Adjust this value based on the size of your loader */
-  height: 375px; /* Adjust this to match the width for a square loader, or to your preference */
+  height: 115px; /* Adjust this to match the width for a square loader, or to your preference */
   animation: pulseRock 4s infinite linear;
 }
 
