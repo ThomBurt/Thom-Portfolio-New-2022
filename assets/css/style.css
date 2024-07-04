@@ -1040,17 +1040,17 @@ section .container {
   display: inline-block;
   width: 100px; /* Adjust this value based on the size of your loader */
   height: 100px; /* Adjust this to match the width for a square loader, or to your preference */
-  animation: spinZoom 4s infinite linear;
+  animation: pulse 4s infinite linear;
 }
 
-@keyframes spinZoom {
-  0% {
-    transform: rotate(0deg) scale(1);
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
   }
   50% {
-    transform: rotate(180deg) scale(1.1); /* Slight zoom in */
-  }
-  100% {
-    transform: rotate(360deg) scale(1); /* Returns to normal size */
+    transform: scale(1.1); /* Slightly zoomed in */
+    opacity: 0.7; /* Lower opacity */
   }
 }
