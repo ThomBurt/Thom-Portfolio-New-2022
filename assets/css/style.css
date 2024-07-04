@@ -1040,17 +1040,25 @@ section .container {
   display: inline-block;
   width: 100px; /* Adjust this value based on the size of your loader */
   height: 100px; /* Adjust this to match the width for a square loader, or to your preference */
-  animation: pulse 4s infinite linear;
+  animation: pulseRock 2s infinite linear;
 }
 
 
-@keyframes pulse {
+@keyframes pulseRock {
   0%, 100% {
-    transform: scale(1);
+    transform: scale(1) rotate(0deg);
     opacity: 1;
   }
+  25% {
+    transform: scale(1.05) rotate(-5deg); /* Slightly zoomed and tilted left */
+    opacity: 0.85;
+  }
   50% {
-    transform: scale(1.1); /* Slightly zoomed in */
-    opacity: 0.7; /* Lower opacity */
+    transform: scale(1.1) rotate(0deg); /* Further zoomed in and centered */
+    opacity: 0.7;
+  }
+  75% {
+    transform: scale(1.05) rotate(5deg); /* Slightly zoomed and tilted right */
+    opacity: 0.85;
   }
 }
