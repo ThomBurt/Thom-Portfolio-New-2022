@@ -994,7 +994,8 @@ section .container {
   top: 0;
   left: 0;
   /* background-color: #242f3f; */
-  background: url('../img/thom_portfolio_bg.png');
+  background-image: linear-gradient(to right, #242f3f, #475569);
+  /* background: url('../img/thom_portfolio_bg.png'); */
   display: flex;
   justify-content: center;
   align-items: center;
