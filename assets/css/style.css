@@ -994,7 +994,8 @@ section .container {
   top: 0;
   left: 0;
   /* background-color: #242f3f; */
-  background-image: linear-gradient(to right, #242f3f, #475569);
+  background-color: #000000;
+  /* background-image: linear-gradient(to right, #242f3f, #475569); */
   /* background: url('../img/thom_portfolio_bg.png'); */
   display: flex;
   justify-content: center;
@@ -1039,7 +1040,7 @@ section .container {
   display: inline-block;
   width: 100px; /* Adjust this value based on the size of your loader */
   height: 100px; /* Adjust this to match the width for a square loader, or to your preference */
-  animation: spinZoom 2s infinite linear;
+  animation: spinZoom 4s infinite linear;
 }
 
 @keyframes spinZoom {
