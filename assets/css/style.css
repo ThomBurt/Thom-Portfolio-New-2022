@@ -1038,8 +1038,8 @@ section .container {
 
 .loader {
   display: inline-block;
-  width: 100px; /* Adjust this value based on the size of your loader */
-  height: 100px; /* Adjust this to match the width for a square loader, or to your preference */
+  width: 250px; /* Adjust this value based on the size of your loader */
+  height: 200px; /* Adjust this to match the width for a square loader, or to your preference */
   animation: pulseRock 4s infinite linear;
 }
 
