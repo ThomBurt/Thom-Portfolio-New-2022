@@ -987,21 +987,21 @@ section .container {
 
 
 
-/* .loader-wrapper {
+.loader-wrapper {
   width: 100vw; 
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #242f3f;
+  /* background-color: #242f3f; */
   background-color: #000000;
-  background-image: linear-gradient(to right, #242f3f, #475569);
-  background: url('../img/thom_portfolio_bg.png');
+  /* background-image: linear-gradient(to right, #242f3f, #475569);
+  background: url('../img/thom_portfolio_bg.png'); */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000; 
-} */
+}
 
 /* .loader {
   display: inline-block;
@@ -1036,16 +1036,11 @@ section .container {
 } */
 
 
-.loader-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: pulseRock 2s infinite linear;
-}
 
 .loader {
   display: inline-block;
   margin-bottom: 10px; /* Adjust as needed to space text from image */
+  animation: pulseRock 2s infinite linear;
 }
 
 .loading-text {
