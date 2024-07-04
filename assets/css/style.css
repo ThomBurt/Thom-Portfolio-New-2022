@@ -995,9 +995,9 @@ section .container {
   top: 0;
   left: 0;
   /* background-color: #242f3f; */
-  /* background-color: #000000; */
+  background-color: #000000;
   /* background-image: linear-gradient(to right, #242f3f, #475569); */
-  background: url('../img/bg.png');
+  /* background: url('../img/bg.png'); */
   display: flex;
   justify-content: center;
   align-items: center;
